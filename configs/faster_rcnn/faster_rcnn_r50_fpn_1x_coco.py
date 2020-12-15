@@ -165,7 +165,7 @@ data = dict(
         pipeline=test_pipeline))
 evaluation = dict(interval=1, metric='bbox')
 
-checkpoint_config = dict(interval=20)
+checkpoint_config = dict(interval=100)
 
 
 # yapf:disable

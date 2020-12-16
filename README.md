@@ -1,20 +1,15 @@
-<div align="center">
-  <img src="resources/mmdet-logo.png" width="600"/>
-</div>
-
-**News**: We released the technical report on [ArXiv](https://arxiv.org/abs/1906.07155).
-
-Documentation: https://mmdetection.readthedocs.io/
 
 ## Introduction
 
-MMDetection is an open source object detection toolbox based on PyTorch. It is
-a part of the OpenMMLab project developed by [Multimedia Laboratory, CUHK](http://mmlab.ie.cuhk.edu.hk/).
+import os
+import torch
+import subprocess
+print(subprocess.check_output("pip install mmcv-full==latest+torch{} -f https://download.openmmlab.com/mmcv/dist/index.html".format(torch.__version__), shell=True))
+!git clone -b master https://github.com/qw61116111/ECG.git 
+os.chdir('ECG')
+!pip install -r ./requirements/build.txt
+!pip install -v -e .
 
-The master branch works with **PyTorch 1.3 to 1.6**.
-The old v1.x branch works with PyTorch 1.1 to 1.4, but v2.0 is strongly recommended for faster speed, higher performance, better design and more friendly usage.
-
-![demo image](resources/coco_test_12510.jpg)
 
 ### Major features
 

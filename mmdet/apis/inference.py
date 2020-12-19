@@ -161,7 +161,7 @@ async def async_inference_detector(model, img):
 def show_result_pyplot(model,
                        img,
                        result,
-                       score_thr=0.3,
+                       score_thr=0.0,
                        fig_size=(15, 100),
                        title='result',
                        block=True):
